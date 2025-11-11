@@ -51,6 +51,16 @@ Make sure:
 * Salaries vary across employees.
 * Include at least one employee with a city other than Delhi.
 
+### 🧾 **Employees Table Data**
+
+| **EmpID** | **Name** | **DepartmentID** | **Salary (₹)** | **City**  | **HireDate** |
+| --------: | -------- | ---------------: | -------------: | --------- | ------------ |
+|         1 | Ramesh   |                1 |       40000.00 | Delhi     | 2020-02-15   |
+|         2 | Priya    |                2 |       60000.00 | Mumbai    | 2019-10-20   |
+|         3 | Anil     |                3 |       55000.00 | Bangalore | 2021-01-10   |
+|         4 | Neha     |                2 |       70000.00 | Delhi     | 2022-05-22   |
+|         5 | Suresh   |                1 |       30000.00 | Chennai   | 2018-09-05   |
+
 ---
 
 ## **Step 5: SQL Queries**
