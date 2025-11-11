@@ -51,7 +51,7 @@ Make sure:
 * Salaries vary across employees.
 * Include at least one employee with a city other than Delhi.
 
-### 🧾 **Employees Table Data**
+### **Employees Table Data**
 
 | **EmpID** | **Name** | **DepartmentID** | **Salary (₹)** | **City**  | **HireDate** |
 | --------: | -------- | ---------------: | -------------: | --------- | ------------ |
@@ -60,6 +60,15 @@ Make sure:
 |         3 | Anil     |                3 |       55000.00 | Bangalore | 2021-01-10   |
 |         4 | Neha     |                2 |       70000.00 | Delhi     | 2022-05-22   |
 |         5 | Suresh   |                1 |       30000.00 | Chennai   | 2018-09-05   |
+
+
+### **Departments Table Data**
+
+| **DepartmentID** | **DepartmentName** |
+| ---------------: | ------------------ |
+|                1 | HR                 |
+|                2 | IT                 |
+|                3 | Finance            |
 
 ---
 
