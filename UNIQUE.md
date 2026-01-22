@@ -7,7 +7,7 @@ Learn how to apply the **UNIQUE constraint** in MySQL to ensure that no duplicat
 
 ---
 
-## 🔹 What is UNIQUE Constraint?
+## What is UNIQUE Constraint?
 
 - The `UNIQUE` constraint ensures that **all values in a column are different**.  
 - You can use it on one column or multiple columns (composite unique key).  
@@ -15,7 +15,7 @@ Learn how to apply the **UNIQUE constraint** in MySQL to ensure that no duplicat
 
 ---
 
-## 🧱 Task 1 – Create Table with UNIQUE Constraint
+## Task 1 – Create Table with UNIQUE Constraint
 
 Create a table `Students` where:
 - `StudentID` is the Primary Key  
@@ -31,20 +31,20 @@ CREATE TABLE Students (
 );
 ````
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 0 rows affected (0.04 sec)
 ```
 
-✅ **Explanation:**
+ **Explanation:**
 
 * `Email` and `PhoneNumber` must be **unique**.
 * Attempting to insert duplicates will raise an **error**.
 
 ---
 
-## 🧱 Task 2 – Insert Valid Data
+##  Task 2 – Insert Valid Data
 
 Insert a few student records with unique emails and phone numbers.
 
@@ -56,7 +56,7 @@ VALUES
 ('Amit Singh', 'amit@example.com', '9123456789');
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 3 rows affected (0.03 sec)
@@ -72,7 +72,7 @@ Query OK, 3 rows affected (0.03 sec)
 
 ---
 
-## 🧱 Task 3 – Violate the UNIQUE Constraint
+##  Task 3 – Violate the UNIQUE Constraint
 
 Try inserting a record with a **duplicate email**.
 
@@ -81,7 +81,7 @@ INSERT INTO Students (Name, Email, PhoneNumber)
 VALUES ('Ramesh Gupta', 'ravi@example.com', '9090909090');
 ```
 
-**🔴 Sample Output:**
+** Sample Output:**
 
 ```
 ERROR 1062 (23000): Duplicate entry 'ravi@example.com' for key 'Email'
@@ -91,7 +91,7 @@ ERROR 1062 (23000): Duplicate entry 'ravi@example.com' for key 'Email'
 
 ---
 
-## 🧱 Task 4 – Composite UNIQUE Constraint
+##  Task 4 – Composite UNIQUE Constraint
 
 Let’s create another table `Enrollments` where **the same student can’t enroll in the same course twice**.
 We’ll use a **composite UNIQUE constraint** on `(StudentID, CourseName)`.
@@ -105,7 +105,7 @@ CREATE TABLE Enrollments (
 );
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 0 rows affected (0.04 sec)
@@ -123,7 +123,7 @@ VALUES
 (1, 'Data Analysis');
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 3 rows affected (0.02 sec)
@@ -136,7 +136,7 @@ INSERT INTO Enrollments (StudentID, CourseName)
 VALUES (1, 'SQL Basics');
 ```
 
-**🔴 Sample Output:**
+** Sample Output:**
 
 ```
 ERROR 1062 (23000): Duplicate entry '1-SQL Basics' for key 'StudentID'
@@ -146,7 +146,7 @@ ERROR 1062 (23000): Duplicate entry '1-SQL Basics' for key 'StudentID'
 
 ---
 
-## ✅ Concepts Practiced
+##  Concepts Practiced
 
 | Concept            | Description                            | Example                 |
 | ------------------ | -------------------------------------- | ----------------------- |
@@ -156,7 +156,7 @@ ERROR 1062 (23000): Duplicate entry '1-SQL Basics' for key 'StudentID'
 
 ---
 
-## 🧠 Bonus Challenge
+##  Bonus Challenge
 
 Create a table `Teachers` with:
 
