@@ -1,12 +1,12 @@
-## 🧩 **Task – Using ALTER TABLE in MySQL**
+## **Task – Using ALTER TABLE in MySQL**
 
-### 🎯 **Objective:**
+###  **Objective:**
 
 Learn how to **modify an existing table** using the `ALTER TABLE` statement — including adding, deleting, and changing columns.
 
 ---
 
-### 🔹 **Table Used:** `Employees`
+###  **Table Used:** `Employees`
 
 | EmpID | Name   | Department | Salary |
 | ----- | ------ | ---------- | ------ |
@@ -16,7 +16,7 @@ Learn how to **modify an existing table** using the `ALTER TABLE` statement — 
 
 ---
 
-### 🔹 **Task 1 – Add a New Column**
+###  **Task 1 – Add a New Column**
 
 Add a new column `City` to the `Employees` table.
 
@@ -25,7 +25,7 @@ ALTER TABLE Employees
 ADD City VARCHAR(50);
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 0 rows affected (0.04 sec)
@@ -42,7 +42,7 @@ Records: 0  Duplicates: 0  Warnings: 0
 
 ---
 
-### 🔹 **Task 2 – Modify Data Type of a Column**
+### **Task 2 – Modify Data Type of a Column**
 
 Change the data type of the `Salary` column from `INT` to `DECIMAL(10,2)`.
 
@@ -51,7 +51,7 @@ ALTER TABLE Employees
 MODIFY Salary DECIMAL(10,2);
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 0 rows affected (0.05 sec)
@@ -63,7 +63,7 @@ Now `Salary` supports decimal values like `55000.50`.
 
 ---
 
-### 🔹 **Task 3 – Rename a Column**
+### **Task 3 – Rename a Column**
 
 Rename the column `Department` to `DeptName`.
 
@@ -72,7 +72,7 @@ ALTER TABLE Employees
 CHANGE Department DeptName VARCHAR(50);
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 0 rows affected (0.04 sec)
@@ -88,7 +88,7 @@ Query OK, 0 rows affected (0.04 sec)
 
 ---
 
-### 🔹 **Task 4 – Drop a Column**
+###  **Task 4 – Drop a Column**
 
 Remove the `City` column from the `Employees` table.
 
@@ -97,7 +97,7 @@ ALTER TABLE Employees
 DROP COLUMN City;
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 0 rows affected (0.03 sec)
@@ -113,7 +113,7 @@ Query OK, 0 rows affected (0.03 sec)
 
 ---
 
-### 🔹 **Task 5 – Rename the Table**
+###  **Task 5 – Rename the Table**
 
 Rename the table `Employees` to `Employee_Details`.
 
@@ -122,7 +122,7 @@ ALTER TABLE Employees
 RENAME TO Employee_Details;
 ```
 
-**🟢 Sample Output:**
+**Sample Output:**
 
 ```
 Query OK, 0 rows affected (0.02 sec)
@@ -134,7 +134,7 @@ Query OK, 0 rows affected (0.02 sec)
 SHOW TABLES;
 ```
 
-**🟢 Sample Output:**
+**Sample Output:**
 
 | Tables_in_test   |
 | ---------------- |
