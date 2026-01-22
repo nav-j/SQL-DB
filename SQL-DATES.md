@@ -2,12 +2,12 @@
 
 ---
 
-## 🎯 Objective
+##  Objective
 Learn how to work with **dates and times** in MySQL using built-in functions such as `CURDATE()`, `NOW()`, `DATE_ADD()`, `DATEDIFF()`, `YEAR()`, and more.
 
 ---
 
-## 📋 Table: Employees
+##  Table: Employees
 
 | EmpID | EmpName     | Department | JoinDate   | BirthDate  |
 |-------:|--------------|-------------|-------------|-------------|
@@ -25,7 +25,7 @@ Learn how to work with **dates and times** in MySQL using built-in functions suc
 SELECT CURDATE() AS CurrentDate, NOW() AS CurrentDateTime;
 ````
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 | CurrentDate | CurrentDateTime     |
 | ----------- | ------------------- |
@@ -41,7 +41,7 @@ FROM Employees
 WHERE JoinDate > '2022-12-31';
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 | EmpName     | Department | JoinDate   |
 | ----------- | ---------- | ---------- |
@@ -57,7 +57,7 @@ SELECT EmpName, DATEDIFF(CURDATE(), JoinDate) AS DaysSinceJoining
 FROM Employees;
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 | EmpName      | DaysSinceJoining |
 | ------------ | ---------------: |
@@ -79,7 +79,7 @@ SELECT EmpName,
 FROM Employees;
 ```
 
-**🟢 Sample Output:**
+**Sample Output:**
 
 | EmpName      | JoinYear | JoinMonth | JoinDay |
 | ------------ | -------: | --------: | ------: |
@@ -99,7 +99,7 @@ SELECT EmpName, JoinDate,
 FROM Employees;
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 | EmpName      | JoinDate   | SixMonthsAfterJoin |
 | ------------ | ---------- | ------------------ |
@@ -119,7 +119,7 @@ FROM Employees
 WHERE MONTH(BirthDate) = 12;
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 | EmpName     | BirthDate  |
 | ----------- | ---------- |
@@ -135,7 +135,7 @@ SELECT EmpName,
 FROM Employees;
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 | EmpName      | Age |
 | ------------ | --: |
@@ -155,7 +155,7 @@ FROM Employees
 WHERE JoinDate >= DATE_SUB(CURDATE(), INTERVAL 2 YEAR);
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 | EmpName     | JoinDate   |
 | ----------- | ---------- |
@@ -172,7 +172,7 @@ SELECT EmpName, JoinDate,
 FROM Employees;
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 | EmpName      | JoinDate   | NextAnniversary |
 | ------------ | ---------- | --------------- |
@@ -192,7 +192,7 @@ FROM Employees;
 
 ---
 
-## ✅ Concepts Practiced
+## Concepts Practiced
 
 | Function                     | Description                | Example                                     |
 | ---------------------------- | -------------------------- | ------------------------------------------- |
