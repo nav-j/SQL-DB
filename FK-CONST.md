@@ -25,7 +25,7 @@ CREATE TABLE Departments (
 );
 ````
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 0 rows affected (0.02 sec)
@@ -40,7 +40,7 @@ INSERT INTO Departments (DeptName)
 VALUES ('HR'), ('Finance'), ('IT');
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 3 rows affected (0.03 sec)
@@ -70,7 +70,7 @@ CREATE TABLE Employees (
 );
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 0 rows affected (0.04 sec)
@@ -90,7 +90,7 @@ VALUES
 ('Amit Singh', 70000, 3);
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 3 rows affected (0.02 sec)
@@ -113,7 +113,7 @@ INSERT INTO Employees (EmpName, Salary, DeptID)
 VALUES ('Neha Verma', 45000, 10);
 ```
 
-**🔴 Sample Output:**
+** Sample Output:**
 
 ```
 ERROR 1452 (23000): Cannot add or update a child row:
@@ -132,7 +132,7 @@ Try deleting a department that is being used by an employee.
 DELETE FROM Departments WHERE DeptID = 1;
 ```
 
-**🔴 Sample Output:**
+** Sample Output:**
 
 ```
 ERROR 1451 (23000): Cannot delete or update a parent row:
@@ -161,7 +161,7 @@ Now, deleting a department will also delete all related employees automatically.
 
 ---
 
-## ✅ Concepts Practiced
+##  Concepts Practiced
 
 | Concept           | Description                        | Example                |
 | ----------------- | ---------------------------------- | ---------------------- |
