@@ -1,13 +1,13 @@
-# 🐬 SQL Task – MySQL Constraints
+#  SQL Task – MySQL Constraints
 
 ---
 
-## 🎯 Objective
+##  Objective
 Learn how to use **SQL constraints** to control data rules and maintain data integrity.
 
 ---
 
-## 🔹 What are Constraints?
+##  What are Constraints?
 
 Constraints are rules applied to table columns to **restrict invalid data entry**.  
 Common MySQL constraints include:
@@ -23,7 +23,7 @@ Common MySQL constraints include:
 
 ---
 
-## 🧱 Table 1: Departments
+##  Table 1: Departments
 
 ### **Task 1 – Create Table with PRIMARY KEY and UNIQUE**
 
@@ -34,7 +34,7 @@ CREATE TABLE Departments (
 );
 ````
 
-**🟢 Sample Output:**
+**Sample Output:**
 
 ```
 Query OK, 0 rows affected (0.03 sec)
@@ -47,7 +47,7 @@ Query OK, 0 rows affected (0.03 sec)
 
 ---
 
-## 🧱 Table 2: Employees
+##  Table 2: Employees
 
 ### **Task 2 – Create Table with Multiple Constraints**
 
@@ -63,7 +63,7 @@ CREATE TABLE Employees (
 );
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 0 rows affected (0.05 sec)
@@ -94,7 +94,7 @@ VALUES
 (103, 'Anil', 'anil@gmail.com', 30000, 3);
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 3 rows affected (0.04 sec)
@@ -104,14 +104,14 @@ Query OK, 3 rows affected (0.04 sec)
 
 ### **Task 4 – Violate Constraints (Try and Observe)**
 
-#### ❌ Attempt to insert a duplicate Email:
+####  Attempt to insert a duplicate Email:
 
 ```sql
 INSERT INTO Employees (EmpID, Name, Email, Salary, DepartmentID)
 VALUES (104, 'Neha', 'ramesh@gmail.com', 45000, 2);
 ```
 
-**🔴 Output:**
+** Output:**
 
 ```
 ERROR 1062 (23000): Duplicate entry 'ramesh@gmail.com' for key 'Email'
@@ -119,14 +119,14 @@ ERROR 1062 (23000): Duplicate entry 'ramesh@gmail.com' for key 'Email'
 
 ---
 
-#### ❌ Attempt to insert a NULL Name:
+####  Attempt to insert a NULL Name:
 
 ```sql
 INSERT INTO Employees (EmpID, Name, Email, Salary, DepartmentID)
 VALUES (105, NULL, 'neha@gmail.com', 45000, 2);
 ```
 
-**🔴 Output:**
+**Output:**
 
 ```
 ERROR 1048 (23000): Column 'Name' cannot be null
@@ -134,14 +134,14 @@ ERROR 1048 (23000): Column 'Name' cannot be null
 
 ---
 
-#### ❌ Attempt to insert Salary below 30,000:
+####  Attempt to insert Salary below 30,000:
 
 ```sql
 INSERT INTO Employees (EmpID, Name, Email, Salary, DepartmentID)
 VALUES (106, 'Karan', 'karan@gmail.com', 25000, 1);
 ```
 
-**🔴 Output:**
+** Output:**
 
 ```
 ERROR 3819 (HY000): Check constraint 'Employees_chk_1' is violated
@@ -158,7 +158,7 @@ INSERT INTO Employees (EmpID, Name, Email, Salary, DepartmentID)
 VALUES (107, 'Suresh', 'suresh@gmail.com', 38000, 1);
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 1 row affected (0.02 sec)
@@ -184,7 +184,7 @@ ALTER TABLE Employees
 DROP CHECK Employees_chk_1;
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 0 rows affected (0.04 sec)
@@ -192,7 +192,7 @@ Query OK, 0 rows affected (0.04 sec)
 
 ---
 
-## ✅ Concepts Practiced
+##  Concepts Practiced
 
 | Constraint    | Description                | Example                            |
 | ------------- | -------------------------- | ---------------------------------- |
@@ -205,12 +205,12 @@ Query OK, 0 rows affected (0.04 sec)
 
 ---
 
-📘 **Practice Goal:**
+ **Practice Goal:**
 This task will help you clearly understand **how each constraint works**, what **violations cause errors**, and how to ensure **data integrity** in your SQL database.
 
 ---
 
-💡 **Challenge:**
+ **Challenge:**
 Try creating a new table `Projects` with constraints:
 
 * `ProjectID` (Primary Key)
