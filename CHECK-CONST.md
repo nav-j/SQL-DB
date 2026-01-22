@@ -2,12 +2,12 @@
 
 ---
 
-## 🎯 Objective
+##  Objective
 Learn how to use the **CHECK constraint** in MySQL to enforce data validation rules during insertion or updating of records.
 
 ---
 
-## 🔹 What is a CHECK Constraint?
+## What is a CHECK Constraint?
 
 - A **CHECK constraint** ensures that all values in a column satisfy a specific condition.  
 - It helps maintain data integrity and consistency within a table.  
@@ -30,7 +30,7 @@ CREATE TABLE Employees (
 );
 ````
 
-**🟢 Sample Output:**
+**Sample Output:**
 
 ```
 Query OK, 0 rows affected (0.03 sec)
@@ -50,7 +50,7 @@ VALUES
 ('Amit Verma', 45, 80000);
 ```
 
-**🟢 Sample Output:**
+**Sample Output:**
 
 ```
 Query OK, 3 rows affected (0.02 sec)
@@ -75,7 +75,7 @@ INSERT INTO Employees (EmpName, Age, Salary)
 VALUES ('Rahul Mehta', 19, 50000);
 ```
 
-**🔴 Sample Output:**
+** Sample Output:**
 
 ```
 ERROR 3819 (HY000): Check constraint 'Employees_chk_1' is violated.
@@ -94,7 +94,7 @@ INSERT INTO Employees (EmpName, Age, Salary)
 VALUES ('Priya Singh', 30, 25000);
 ```
 
-**🔴 Sample Output:**
+** Sample Output:**
 
 ```
 ERROR 3819 (HY000): Check constraint 'Employees_chk_2' is violated.
@@ -111,7 +111,7 @@ ALTER TABLE Employees
 ADD CONSTRAINT chk_name CHECK (EmpName <> '');
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 0 rows affected (0.01 sec)
@@ -129,7 +129,7 @@ Use the following command to list constraints on the Employees table:
 SHOW CREATE TABLE Employees;
 ```
 
-**🟢 Sample Output (Partial):**
+** Sample Output (Partial):**
 
 ```
 CREATE TABLE `Employees` (
@@ -144,7 +144,7 @@ CREATE TABLE `Employees` (
 
 ---
 
-## ✅ Concepts Practiced
+##  Concepts Practiced
 
 | Concept         | Description                | Example                                         |
 | --------------- | -------------------------- | ----------------------------------------------- |
