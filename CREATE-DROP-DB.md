@@ -1,12 +1,12 @@
-## 🧩 **Task – Working with Databases**
+##  **Task – Working with Databases**
 
-### 🎯 **Objective:**
+###  **Objective:**
 
 Learn how to create, use, and delete a database in MySQL.
 
 ---
 
-### 🔹 **Task 1 – CREATE DATABASE**
+###  **Task 1 – CREATE DATABASE**
 
 Create a new database named **CompanyDB**.
 
@@ -14,7 +14,7 @@ Create a new database named **CompanyDB**.
 CREATE DATABASE CompanyDB;
 ```
 
-**🟢 Sample Output:**
+**Sample Output:**
 
 ```
 Query OK, 1 row affected (0.01 sec)
@@ -22,7 +22,7 @@ Query OK, 1 row affected (0.01 sec)
 
 ---
 
-### 🔹 **Task 2 – USE DATABASE**
+###  **Task 2 – USE DATABASE**
 
 Switch to the new database so that all future tables are created inside it.
 
@@ -30,7 +30,7 @@ Switch to the new database so that all future tables are created inside it.
 USE CompanyDB;
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Database changed
@@ -38,7 +38,7 @@ Database changed
 
 ---
 
-### 🔹 **Task 3 – Verify Databases**
+###  **Task 3 – Verify Databases**
 
 Display all databases available on your MySQL server.
 
@@ -46,7 +46,7 @@ Display all databases available on your MySQL server.
 SHOW DATABASES;
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 | Database           |
 | ------------------ |
@@ -58,7 +58,7 @@ SHOW DATABASES;
 
 ---
 
-### 🔹 **Task 4 – DROP DATABASE**
+###  **Task 4 – DROP DATABASE**
 
 Delete the **CompanyDB** database permanently.
 
@@ -66,7 +66,7 @@ Delete the **CompanyDB** database permanently.
 DROP DATABASE CompanyDB;
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 0 rows affected (0.02 sec)
@@ -74,7 +74,7 @@ Query OK, 0 rows affected (0.02 sec)
 
 ---
 
-### 💡 **Tip:**
+###  **Tip:**
 
 Always check databases before dropping one:
 
