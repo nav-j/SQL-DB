@@ -2,12 +2,12 @@
 
 ---
 
-## 🎯 Objective
+##  Objective
 Learn how to use the **DEFAULT constraint** in MySQL to automatically insert default values when no value is provided for a column.
 
 ---
 
-## 🔹 What is a DEFAULT Constraint?
+##  What is a DEFAULT Constraint?
 
 - A **DEFAULT constraint** assigns a **default value** to a column when no value is specified during an `INSERT` operation.  
 - It helps ensure data completeness without requiring manual input for every field.  
@@ -33,7 +33,7 @@ CREATE TABLE Employees (
 );
 ````
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 0 rows affected (0.03 sec)
@@ -48,7 +48,7 @@ INSERT INTO Employees (EmpName, Department, City, Status, JoinDate)
 VALUES ('Ravi Kumar', 'IT', 'Mumbai', 'On Leave', '2025-09-20');
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 1 row affected (0.01 sec)
@@ -69,7 +69,7 @@ INSERT INTO Employees (EmpName, Department)
 VALUES ('Neha Sharma', 'HR');
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 1 row affected (0.01 sec)
@@ -92,7 +92,7 @@ INSERT INTO Employees (EmpName, Department, City, Status)
 VALUES ('Amit Verma', 'Finance', 'Pune', 'Inactive');
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 1 row affected (0.01 sec)
@@ -112,7 +112,7 @@ Query OK, 1 row affected (0.01 sec)
 SELECT * FROM Employees;
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 | EmpID | EmpName     | Department | City   | Status   | JoinDate   |
 | ----: | ----------- | ---------- | ------ | -------- | ---------- |
@@ -131,7 +131,7 @@ ALTER TABLE Employees
 ALTER City SET DEFAULT 'Chennai';
 ```
 
-**🟢 Sample Output:**
+** Sample Output:**
 
 ```
 Query OK, 0 rows affected (0.02 sec)
@@ -141,7 +141,7 @@ Query OK, 0 rows affected (0.02 sec)
 
 ---
 
-## ✅ Concepts Practiced
+## Concepts Practiced
 
 | Concept            | Description            | Example                            |
 | ------------------ | ---------------------- | ---------------------------------- |
